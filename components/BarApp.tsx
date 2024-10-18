@@ -2,6 +2,7 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { View, Text, TouchableOpacity, StyleSheet, TextInput } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { router } from 'expo-router';
 
 export default function BarApp() {
   return (
@@ -19,7 +20,7 @@ export default function BarApp() {
                     <Ionicons name="person-circle-outline" size={30} color="white" />
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.iconSpacing}>
+                <TouchableOpacity style={styles.iconSpacing} onPress={() =>router.push("/screens/Parametre")}>
                     <Ionicons name="settings" size={28} color="white" />
                 </TouchableOpacity>
         </View>

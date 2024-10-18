@@ -57,6 +57,20 @@ export default function TabLayout() {
       ),
     }}
   />
+
+<Tabs.Screen
+    name="StoriesScreen"
+    options={{
+      title: 'Story',
+      tabBarIcon: ({ color, focused }) => (
+        <Ionicons
+          name={focused ? 'id-card' : 'id-card-outline'}
+          color={color}
+          size={24}
+        />
+      ),
+    }}
+  />
     </Tabs>
   );
 }
